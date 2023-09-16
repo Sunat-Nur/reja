@@ -9,6 +9,6 @@ function file(Hello) {
     return count;
 }
 
-const input = "uiidsufdsfsdf";
+const input = "uiidsufdsfsdf342342";
 const result = file(input);
 console.log(result);
