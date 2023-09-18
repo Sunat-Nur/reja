@@ -39,7 +39,7 @@ class account {
     }
 
     static tellMeTime() {
-        console.log(`hozirgi vaqt ${moment().format("YY MM DD HH:mm:ss")}`)
+        console.log(`hozirgi time ${moment().format("YY MM DD HH:mm:ss")}`)
     }
 }
 

@@ -22,6 +22,6 @@ function checkSimilarity2(check2, letter2) {
     }
 }
 
-const answer = checkSimilarity2("samad", "dajjmas");
+const answer = checkSimilarity2("samad", "dojjmas");
 console.log(answer);
 
