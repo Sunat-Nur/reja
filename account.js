@@ -11,7 +11,7 @@ class account {
     }
 
     tellMeBalance() {
-        console.log(`sizning hisobingizda qoldiq: ${this.#amount}$ tashkil etadi`);
+        console.log(`sizning hisobingizda  ${this.#amount}$ tashkil etadi`);
         return this.#amount;
     }
 
