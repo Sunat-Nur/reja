@@ -19,6 +19,16 @@
   },
   "homepage": "https://github.com/Sunat-Nur/reja#readme",
   "dependencies": {
-    "moment": "^2.29.4"
+    "chalk": "^4.1.2",
+    "compose": "^0.1.2",
+    "console": "^0.7.2",
+    "fix-path": "^3.0.0",
+    "inquirer": "^8.2.6",
+    "moment": "^2.29.4",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^3.0.1",
+    "random": "^4.1.0",
+    "require": "^2.4.20",
+    "uuidv4": "^6.2.13"
   }
 }
