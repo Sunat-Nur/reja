@@ -1,4 +1,4 @@
-console.log("train task tekshirilish uchun tayor");
+console.log("train task tekshirilish uchun tayyyor");
 
 
 

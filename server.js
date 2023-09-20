@@ -18,7 +18,7 @@ app.set("view engine",  "ejs");
 // 4 Routing code
 
 app.get("/hello", function (req, res) {
-    res.end("salom biz boshladik");
+    res.end("salom biz boshladik.");
 });
 
 const server = http.createServer(app);

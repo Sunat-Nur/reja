@@ -1,7 +1,7 @@
 const moment = require("moment");
 
 function tellMeTime() {
-    console.log(`ayni vaqt bizda  ${moment().format("DD MM YYYY HH:mm")} ni ko'rsatyabdi`)};
+    console.log(`ayni vaqt bizda  ${moment().format("DD MM YYYY HH:mm")} ni ko'rsatyadi`)};
 
 
 class appleShop {
