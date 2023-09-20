@@ -7,13 +7,10 @@ console.log('================');
 
 const myAppleShop = new AppleShop(20,40,60);
 
-myAppleShop.sotish(10,10,10);
+myAppleShop.sotish(10,10,11);
 console.log('================');
-
 myAppleShop.qoshish(10,2,4);
 console.log('================');
-
-
 myAppleShop.qoldiq();
 console.log('================');
 

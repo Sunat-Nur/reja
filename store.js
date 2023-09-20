@@ -1,7 +1,7 @@
 const moment = require("moment");
 
 function tellMeTime() {
-    console.log(`ayni vaqt bizda  ${moment().format("DD MM YYYY HH:mm")} ni ko'rsatyadi`)};
+    console.log(`ayni vaqt bizda  ${moment().format("DD MM YYYY HH:mm")} ni ko'rsatyadi`)}
 
 
 class appleShop {
@@ -44,7 +44,7 @@ class appleShop {
 
     qoldiq() {
         console.log(`Salom hurmatli Xodim bugun bizning appleStoreda  ${this.iphone} dona iphone, ${this.ipad} dona ipad, va ${this.mackBook} dona Mackbook qoldi.`);
-        console.log("Bugun juda yaxshi xizmat korsatiyz. Hayirli tun !!!");
+        console.log("Bugun juda yaxshi xizmat korsatiyz. Hayirli tun !!");
         tellMeTime();
     }
 }

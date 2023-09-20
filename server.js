@@ -21,6 +21,10 @@ app.get("/hello", function (req, res) {
     res.end("salom biz boshladik.");
 });
 
+app.get("/second", function (req, res) {
+    res.end("ikkinchi sahifa.");
+});
+
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
