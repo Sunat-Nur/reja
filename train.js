@@ -1,20 +1,20 @@
 console.log("train task tekshirilish uchun tayyyor");
 
-
-
 const AppleShop = require("./store");
 console.log('================');
 
-const myAppleShop = new AppleShop(20,40,60);
+const myAppleShop = new AppleShop(20,15,10);
 
-myAppleShop.sotish(10,10,11);
-console.log('================');
-myAppleShop.qoshish(10,2,4);
-console.log('================');
-myAppleShop.qoldiq();
+myAppleShop.sell(3,6,6);
 console.log('================');
 
 
+myAppleShop.qoshish(10,8,9);
+ console.log('================');
+
+
+ myAppleShop.qoldiq();
+ console.log('================');
 
 
 
