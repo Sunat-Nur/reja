@@ -1,9 +1,18 @@
 console.log("web serverni boshladik");
 const express = require("express");
-//let res;
 res = require("express/lib/response");
 const app = express();
 const http = require("http");
+const fs = require("fs")   // file systemni obkeldik
+
+let user;
+fs.readFile("database/user.json", "utf8",(err, data) => {
+    if(err) {
+        console.log("ERROR:", err);
+    } else {
+        user = JSON.parse(data)
+    }
+})
 
 
 //1: Kirish code
@@ -23,10 +32,14 @@ app.post("/create-item", (req, res) => {
     res.json({ test: "success"});
 });
 
+app.get('/author', (req, res) => {
+    res.render('author', {user: user})
+})
 
-app.get("/", (req,res) => {
-    res.render('xarid');
-});
+//
+// app.get("/", (req,res) => {
+//     res.render('xarid');
+// });
 
 const server = http.createServer(app);
 let PORT = 3000;

@@ -1,6 +1,8 @@
  console.log("train task tekshirilish uchun tayyyor");
 
 
+//task D
+
 // const AppleShop = require("./store");
 // console.log('================');
 //
