@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: #f0f0f6;;
+    background: whitesmoke;
 }
 
 
@@ -16,42 +16,46 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 2px;
-    background: #f0f0f6;;
+    background: whitesmoke;
+    margin: 0 0 34px 34px;
+
 }
 
 .main_frame .left_frame {
     position: relative;
     width: 305px;
-    height: 1315px;
+    height: 1346px;
     background-color: white;
     display: flex;
     flex-direction: column;
+    margin-top:35px
 }
 
 .main_frame .midd_frame  {
     position: relative;
-    width: 970px;
+    width: 973px;
     height: 1259px;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    margin-right: 27px;
+    background-color: whitesmoke;
+
 }
 
 .main_frame .right_frame  {
     position: relative;
     width: 108px;
-    height: 1315px;
+    height: 725px;
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
+    background-color: white;
     align-items: center;
     flex-grow: 0;
-    margin: 0 0 13px 22px;
     padding: 50px 22px 568px 21px;
     box-shadow: 4px 0 10px 0 rgba(47, 122, 249, 0.1);
     border: white 1px;
+    margin-top: 34px;
+    margin-left: 60px;
+    margin-right: 10px;
 }
 
 .main_frame  .left_1  {
@@ -93,6 +97,9 @@
     height: 126px;
     margin-left: 47px;
     margin-right: 37px;
+    display: flex;
+    flex-direction: column;
+    color: #2b2b2b;
 }
 
 .main_frame .left_frame .left_1-3 {
@@ -136,22 +143,22 @@
     height: 153px;
     margin-left: 47px;
     margin-top: 25px;
-    background-color:  #f0f0f6;
+    background-color:  white;
     flex-direction: row;
 }
 
 
+ /*iconni ichki qismi */
 .left-icons{
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     margin-top: 19px;
+    border-radius: 50px;
     width: 227.99px;
     height: 21.99px;
-    border-radius: 50%;
-    border: none;
 }
 
 .link_href {
@@ -168,104 +175,133 @@
     margin: 0 15.6px 0.4px 0;
     object-fit: contain;
     background-color: #ffb400;
-    border-radius: 80%;
+    border-radius: 70%;
+    display: flex;
+
+}
+
+.icon--1{
+    width: 15.6px;
+    height: 16.6px;
+    flex-grow: 0;
+    object-fit: contain;
     display: inline-flex;
-}
-
-.icon-1 {
-    width: 12.4px;
-    height: 8.7px;
-    background-color: #2b2b2b;
     position: relative;
+    margin-top: 2px;
+    margin-left: 4px;
 }
-
 
 .main_frame .left_frame .left_4 {
     position: relative;
-    width: 186px;
+    width: 220px;
     height: 148px;
     margin-left: 45px;
     margin-top: 25px;
+    justify-content: space-between;
+    margin-bottom: 180px;
 }
 
-/*about*/
+ .left_5 {
+    position: relative;
+    width: 186px;
+    height: 148px;
+    margin-top: 25px;
+    margin-left: 45px;
+}
 
-.age_id {
-    width: 46.2px;
+ /*about qismi */
+
+.left_2_1 {
+    width: 46.21px;
+    height: 24px;
+    top: 378px;
+    left: 47px;
+    flex-direction: row;
+    margin-left: 1px;
+    margin-right: 167px;
+    background-color: #ffb400;
+    line-height: 1.8;
+
+}
+.left_2_2 {
+    width: 89px;
     height: 24px;
     flex-grow: 0;
-    margin: 0 155.7px 1px 0;
+    margin: 0 110px 5px 0;
+    padding: 0 6px 0 5px;
+    object-fit: contain;
     background-color: #ffb400;
-    padding: 0 8px 0 5px;
-    flex-direction: row;
-    position: relative;
-    margin-left: 45px;
-    line-height: 1.6;
-    color: #2b2b2b;
-    font-size: 15px;
     text-align: left;
-
+    line-height: 1.8;
+    position: relative;
 }
 
-/*yoshi 27*/
-
-.about_id {
+.left_2_3 {
     width: 85px;
     height: 24px;
     flex-grow: 0;
-    margin: 0 117px 0 0;
+    /*margin: 0 70px 1px 0;*/
+    margin-right: 71px;
     padding: 0 6px 0 5px;
     background-color: #ffb400;
-    margin-left: 45px;
-    position: relative;
-    flex-direction: row;
-    line-height: 1.6;
-    color: #2b2b2b;
-    font-size: 15px;
-    text-align: left;
-
+    line-height: 1.8;
 }
 
-.about_id_2 {
-    width: 85px;
-    height: 24px;
-    flex-grow: 0;
-    margin: 0 85px 0 0;
-    padding: 0 6px 0 5px;
-    background-color: #ffb400;
-    margin-left: 45px;
-    line-height: 1.6;
-    color: #2b2b2b;
-    font-size: 15px;
-    text-align: left;
-
-}
-
-.about_id_3 {
+.left_2_4 {
     width: 75px;
     height: 24px;
     flex-grow: 0;
-    margin-right: 60px;
-    margin-top: 10px;
+    //margin: 0 13px 0 0;
     padding: 0 7px 0 5px;
     background-color: #ffb400;
-    margin-left: 45px;
-    line-height: 1.6;
-    color: #2b2b2b;
-    font-size: 15px;
-    flex-direction: row;
-    text-align: left;
+    line-height: 1.8;
+    margin-right: 51px;
+    margin-bottom: 10px;
+}
+ /*language qismi */
 
+.left_3_1 {
+    margin-bottom: 15px;
+    text-align: left;
+    color: #2b2b2b;
+    width: 95px;
+    height: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.24;
+    margin-top: 25px;
+}
+
+
+.languages {
+    width: 49px;
+    height: 24px;
+    margin: 0 133px 0 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #767676;
+    line-height: 1.6;
+}
+
+
+.language_percent {
+    width: 38px;
+    height: 24px;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    color: #767676;
 }
 
 
 
-  /*language qismi */
+/*skill qismi*/
 
-.language {
-    width: 95px;
+.left_4_1 {
+    width: 45px;
     height: 22px;
-    flex-grow: 0;
     font-family: sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -273,39 +309,292 @@
     line-height: 1.24;
     text-align: left;
     color: #2b2b2b;
-    margin-left: 23px;
+    margin-top: 51px;
     margin-bottom: 15px;
-    position: relative;
-    display: flex;
+    margin-right: 213px;
 }
-  /*till qismi */
-.left_4 {
-    flex-direction: column;
-    display: flex;
-    text-align: left;
-}
-.skill_1{
-    width: 49px;
+
+.skill {
     height: 24px;
-    flex-grow: 0;
+    margin-right: 50px;
     font-family: sans-serif;
     font-size: 15px;
-    font-style: normal;
     line-height: 1.6;
-    text-align: left;
-    margin-left: 47px;
-    margin-top: 10px;
+    text-align: right;
     color: #767676;
-    margin-bottom: 15px;
-    position: relative;
     flex-direction: row;
 }
 
-span {
-    width: 38px;
+
+.skill_js {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: right;
+    color: #767676;
+    margin: 0 0 0 117px;
+}
+
+.skill_html {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: right;
+    color: #767676;
+    margin: 0 0 0 93px;
+}
+
+.skill_percent {
+    margin: 0 0 0 103px;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: right;
+    color: #767676;
+}
+
+.skill_python {
+    margin: 0 0 0 87px;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: right;
+    color: #767676;
+}
+
+
+/*extra skill qismi */
+
+.left_5_1 {
+    width: 94px;
+    height: 22px;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.24;
+    text-align: left;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+
+.Icons_5 {
+    width: 15px;
+    height: 15px;
+    flex-grow: 0;
+    margin: 4px 15px 5px 0;
+    object-fit: contain;
+}
+
+.left_5_4 {
+    font-size: 17px;
+    width: 170px;
+    height: 24px;
+    color: #767676;
+    line-height: 2;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+/*midd qismi */
+.midd_side {
+    width: 901px;
+    height: 464.3px;
+    flex-grow: 0;
+    padding: 37.9px 37px 14.7px 36.1px;
+    background-color: #fff;
+    margin-left: 30px;
+    margin-top: 1px;
+}
+
+.yellow {
+    position: absolute;
+    left: 40px;
+    top: 55px;
+    height: 20px;
+    width: 20px;
+    /*height: 15.6px;*/
+    flex-grow: 0;
+    /*margin: 38 4px 5.8px 36;*/
+    object-fit: contain;
+    /*border: solid 2px rgba(255, 180, 0, 0.8);*/
+}
+
+.green {
+    position: absolute;
+    top: 65px;
+    right: 300px;
+    width: 16px;
+    height: 15.6px;
+    flex-grow: 0;
+    margin: 25.3px 270.3px 4.9px 32px;
+    object-fit: contain;
+    /*border: solid 2px rgba(5, 255, 0, 0.8);*/
+
+}
+.polygon {
+    position: absolute;
+    top: 426px;
+    right: 45px;
+    width: 16px;
+    height: 15.6px;
+    flex-grow: 0;
+    margin: 30.2px 0 0 4.2px;
+    object-fit: contain;
+    /*border: solid 2px rgba(255, 46, 0, 0.8);*/
+
+}
+.rectang {
+    position: absolute;
+    top: 150px;
+    right: 70px;
+    width: 20px;
+    height: 20.8px;
+    flex-grow: 0;
+    /*margin: 12.1px 124.7px 26.8px 160.2px;*/
+    object-fit: contain;
+    transform: rotate(-334.59deg);
+    /*border: solid 2px rgba(0, 71, 255, 0.8);*/
+
+}
+
+.midd_frame_side {
+    display: flex;
+    flex-direction: row;
+    width: 671px;
+    height: 454.327px;
+    background: white;
+    margin-top: 20px;
+}
+.green2 {
+    position: absolute;
+    bottom: 750px;
+    left: 370px;
+}
+
+.midd_side_info {
+    width: 499.514px;
+    height: 116.744px;
+    flex-shrink: 0;
+    color: #2B2B2B;
+    font-family: sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30.6%; /*59.328px */
+    margin-top: 10px;
+}
+
+/* About My Teks section  */
+.about_mee {
+    width: 424.4px;
+    height: 85.6px;
+    flex-grow: 0;
+    margin: 17.1px 31.1px 12.1px 8.9px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: #767676;
+}
+
+.midd_side_input {                             /* HIRE ME */
+    padding-top: 32px;
+    width: 154px;
+    height: 52px;
+}
+.midd_side_left {
+    margin: 30px;
+    padding-top: 40px;
+    padding-left: 25px;
+}
+.midd_side_right {  /* urtadagi rasm quyilgan joy */
+    padding-bottom: 0px;
+    background: white;
+}
+
+.midd_frame_inside {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 970px;
+    height: 653px;
+
+
+}
+.server {       /* my server section */
+    color: #2B2B2B;
+    /* H2 - 32px */
+    font-family:sans-serif;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.6%; /* 39.552px */
+    text-transform: capitalize;
+}
+.service_desc {   /* my server section teksi */
+    width: 438px;
+    height: 68px;
+    /*flex-shrink: 0;*/
+    color: #767676;
+    text-align: center;
+    /*font-kerning: none;*/
+    font-feature-settings: 'calt' off;
+    margin: 25px 266px 50px;
+    /* P-15px paragraph */
+    font-family:sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    text-transform: capitalize;
+}
+.boxes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+
+
+}
+
+.part {    /* servise ichidagi bulimlarni kvadrat shakliga chaqirib olamiz */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 225px;
+    background: white;
+    bottom: 15px;
+}
+.midd_img {    /*rasmlarni joylaymiz*/
+    width: 68px;
+    height: 68px;
+    bottom: 10px;
+    margin: 0 66px 26px;
+}
+
+.midd_name {   /* har bir bulimning yozuvini standat shaklga keltirsh*/
+    color: #2B2B2B;
+    top: 10px;
+    /* H4 - 18px */
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 22.248px */
+    text-transform: capitalize;
+}
+.midd_desc {
+    width: 200px;
     height: 24px;
     flex-grow: 0;
-    margin: 0 0 0 133px;
+    margin: 1px 0 0;
     font-family: sans-serif;
     font-size: 15px;
     font-weight: normal;
@@ -313,141 +602,59 @@ span {
     font-style: normal;
     line-height: 1.6;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #767676;
-    position: relative;
 }
-.percent_1{
-    text-align: left;
-    flex-direction: row;
-    font-style: normal;
-    margin-left: 45px;
-    position: relative;
-}
-
-.extra_skill{
-    margin-left: 10px;
-    margin-bottom: 20px;
-    flex-direction: row;
-    font-style: normal;
-    position: relative;
-
+.order {
+    color:#FFB400;
+    width: 9px;
+    height: 10px;
+    font-family: sans-serif;
+    font-size: 12px;
 }
 
-.Icons {
-    position: relative;
-    width: 20px;
-    height: 20px;
+.p1{
+    width: 260px;
+    height: 78px;
     flex-grow: 0;
-    margin: 4px 15px 5px 0;
-    object-fit: contain;
+    margin: 22px 0 27px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #767676;
 }
 
+.midd_advertis {
 
-/*right qismi boshlanishi*/
-
-.main_frame .right_frame  {
-    position: relative;
-    width: 108px;
-    height: 1315px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid red;
+    margin: 0 81px 62px 80px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.24;
+    text-align: left;
+    color: #2b2b2b;
 }
 
+/*right qismi boshlandi*/
 
-
-.right_id {
+.right_icon_1 {
     width: 30px;
     height: 30px;
-    margin: 35px 20px 50px 18px;
-
-}
-.Contrast {
-    margin-top: 40px;
-}
-
-
-.Home {
-    width: 50px;
-    height: 30px;
     flex-grow: 0;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-    flex-direction: column;
-    margin-top: 200px;
-}
-
-.Home2 {
-    width: 40px;
-    height: 40px;
-    flex-grow: 0;
-    /*margin: 5px 12px 0 13px;*/
-    background-color: #ffb400;
-    margin-top: 5px;
-    border-radius: 50%;
-}
-
-
-img.Service {
-    width: 40px;
-    height: 40px;
-    flex-grow: 0;
-    margin: 43px 12px 43px 13px;
+    margin: 60px 17px 174px 18px;
     object-fit: contain;
-    margin-left: auto;
 }
 
-
-img.Cv {
+.right_icon_2 {
     width: 40px;
     height: 40px;
     flex-grow: 0;
-    margin: 43px 12px 43px 13px;
+    margin: 35px 12px 0 7px;
     object-fit: contain;
-    margin-left: auto;
 }
-
-.Portfolio {
-    width: 40px;
-    height: 40px;
-    flex-grow: 0;
-    margin: 43px 12px 43px 13px;
-    object-fit: contain;
-    margin-left: auto;
-}
-
-img.Blog {
-    width: 40px;
-    height: 40px;
-    flex-grow: 0;
-    margin: 43px 12px 43px 13px;
-    object-fit: contain;
-    margin-left: auto;
-}
-img.Contact {
-    width: 40px;
-    height: 40px;
-    flex-grow: 0;
-    margin: 43px 12px 0 13px;
-    object-fit: contain;
-    margin-left: auto;
-}
-
-/*midd teppa qismi */
-
-.background_image {
-    width: 971px;
-    height: 454.3px;
-    flex-grow: 0;
-    background-color: yellow;
-    position: relative;
-    flex-direction: row;
-    display: flex;
-}
-
-
 
