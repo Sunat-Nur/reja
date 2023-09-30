@@ -1,5 +1,3 @@
-console.log("train task tekshirilish uchun tayyyor");
-
 // task - E
 
 function reverse (str) {
@@ -13,6 +11,7 @@ const output = reverse(str);
 console.log(output);
 
 
+console.log("train task tekshirilish uchun tayyyor");
 
 //  callback function
 //
