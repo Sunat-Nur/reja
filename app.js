@@ -1,9 +1,7 @@
 console.log("web serverni boshladik");
 const express = require("express");
-res = require("express/lib/response");
+const res = require("express/lib/response");
 const app = express();
-const http = require("http");
-const fs = require("fs")   // file systemni obkeldik
 //
 // let user;
 // fs.readFile("database/user.json", "utf8",(err, data) => {
@@ -14,9 +12,9 @@ const fs = require("fs")   // file systemni obkeldik
 //     }
 // })
 
+// MongoDB call
 
-
-// MongoDB connection
+ const db = require("./server").db();
 
 //1: Kirish code
 app.use(express.static("public"));
@@ -29,23 +27,22 @@ app.use(express.urlencoded({extended: true}));
 app.set("views",   "views");
 app.set("view engine",  "ejs",);
 
+
 // 4 Routing code
 app.post("/create-item", (req, res) => {
-    console.log(req.body);
-    res.json({ test: "success"});
+// TODO: code with db here
+
 });
 
-app.get('/author', (req, res) => {
-    res.render('author', {user: user})
-})
-
-
-app.get("/", (req,res) => {
-    res.render('reja');
+app.get ("/", function (req, res) {
+    res.render("reja");
 });
 
-const server = http.createServer(app);
-let PORT = 3000;
-server.listen(PORT, function () {
-    console.log(`the server is running successfully on port: ${PORT}, http://localhost:${PORT}`);
-});
+//
+// app.get('/author', (req, res) => {
+//     res.render('author', {user: user})
+// })
+
+
+
+module.exports = app;
