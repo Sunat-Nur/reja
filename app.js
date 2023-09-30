@@ -1,6 +1,5 @@
 console.log("web serverni boshladik");
 const express = require("express");
-const res = require("express/lib/response");
 const app = express();
 //
 // let user;
@@ -24,18 +23,36 @@ app.use(express.urlencoded({extended: true}));
 // 2: Session code
 // 3: Views code
 
-app.set("views",   "views");
-app.set("view engine",  "ejs",);
+ app.set("views",   "views");
+ app.set("view engine",  "ejs",);
 
 
 // 4 Routing code
-app.post("/create-item", (req, res) => {
-// TODO: code with db here
-
+ app.post("/create-item", (req, res) => {
+ console.log(req.body);
+ const new_reja = req.body.reja;
+ db.collection("plans").insertOne({ reja: new_reja}, (err, data) => {
+    if (err) {
+        console.log(err);
+        res.end("something went wring");
+    } else {
+        res.end("successfully added");
+    }
+ });
 });
 
-app.get ("/", function (req, res) {
-    res.render("reja");
+ app.get ("/", function (req, res) {
+   db.collection("plans")
+       .find()
+       .toArray((err, data) => {
+       if(err) {
+           console.log(err);
+           res.end("something went wrong");
+       } else {
+           console.log(data);
+           res.render("reja");
+       }
+    });
 });
 
 //
