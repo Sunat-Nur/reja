@@ -29,7 +29,7 @@ app.use(express.urlencoded({extended: true}));
 
 // 4 Routing code
  app.post("/create-item", (req, res) => {
- console.log(req.body);
+     console.log("user entered / create-item")
  const new_reja = req.body.reja;
  db.collection("plans").insertOne({ reja: new_reja}, (err, data) => {
     if (err) {
@@ -42,14 +42,14 @@ app.use(express.urlencoded({extended: true}));
 });
 
  app.get ("/", function (req, res) {
-   db.collection("plans")
+   console.log("user entered /");
+     db.collection("plans")
        .find()
        .toArray((err, data) => {
        if(err) {
            console.log(err);
            res.end("something went wrong");
        } else {
-           console.log(data);
            res.render("reja", { items: data});
        }
     });
