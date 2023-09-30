@@ -14,7 +14,7 @@ const app = express();
 
 // MongoDB call
 
- const db = require("../../mt5project/reja/server").db();
+ const db = require("../../reja/reja/server").db();
 
 //1: Kirish code
 app.use(express.static("public"));
