@@ -13,7 +13,7 @@ const app = express();
 
 // MongoDB call
 
- const db = require("../../reja/reja/server").db();
+ const db = require("./server").db();
 
 //1: Kirish code
 app.use(express.static("public"));
@@ -50,7 +50,7 @@ app.use(express.urlencoded({extended: true}));
            res.end("something went wrong");
        } else {
            console.log(data);
-           res.render("reja");
+           res.render("reja", { items: data});
        }
     });
 });
