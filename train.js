@@ -1,17 +1,39 @@
+console.log("train task tekshirilish uchun tayyyor");
+
+// TASK --- F
+
+const getReverse = function(str) {
+    for(let i = 0; i <= str.length; i++) {
+        for(let a = i+1; a <= str.length; a++) {
+            if(str[a] === str[i]) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+const input = "hello";
+const result = getReverse(input);
+console.log(result)
+
+
+
+
+
 // task - E
 
-function reverse (str) {
-    if (str === "")
-        return "";
-    else
-        return reverse(str.substring(1)) + str.charAt(0);
-}
-let str = "hello";
-const output = reverse(str);
-console.log(output);
+// function reverse (str) {
+//     if (str === "")
+//         return "";
+//     else
+//         return reverse(str.substring(1)) + str.charAt(0);
+// }
+// let str = "hello";
+// const output = reverse(str);
+// console.log(output);
+//
 
-
-console.log("train task tekshirilish uchun tayyyor");
 
 //  callback function
 //
@@ -107,8 +129,8 @@ console.log("train task tekshirilish uchun tayyyor");
 // const input = "uiidsufdsfsdf342342";
 // const result = file(input);
 // console.log(result);
-//
-//
+
+
 // //shop ni yaratamiz;
 // const myShop = new Shop(7, 3, 5);
 //
