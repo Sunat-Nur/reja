@@ -18,9 +18,6 @@ const result = getReverse(input);
 console.log(result)
 
 
-
-
-
 // task - E
 
 // function reverse (str) {

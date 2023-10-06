@@ -3,8 +3,8 @@ const mongodb = require("mongodb");
 
 let db;
 const connectionString =
-    "mongodb+srv://sunat_nur:VxOnl9DbtZoyKFvx@cluster0.zkawn2h.mongodb.net/Reja"
 
+    "mongodb+srv://sunat_nur:BEnjw9gLBogakNv4@cluster0.zkawn2h.mongodb.net/Reja"
 
 mongodb.connect(
     connectionString,
@@ -22,8 +22,7 @@ mongodb.connect(
             let PORT = 3000;
             server.listen(PORT, function() {
                 console.log(
-                    `the server is running successfully on port: ${PORT}, http://localhost:${PORT}`
-                );
+                    `the server is running successfully on port: ${PORT}, http://localhost:${PORT}`);
             });
 
         }

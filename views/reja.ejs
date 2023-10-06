@@ -11,13 +11,15 @@
           crossorigin="anonymous"
     />
 </head>
+
 <body style="background: antiquewhite">
 <div class="container">
     <h1 class="display-4 text-center py-1"> Reja va Maqsadlar</h1>
-    <div clas="jumbotron p-3 shadow-sm">
+    <div class="jumbotron p-3 shadow-sm">
         <form id="create-form" action="/create-item" method="POST">
             <div class="d-flex align-items-center">
                 <input
+
                         id="create-field"
                         name="reja"
                         autofocus
@@ -26,12 +28,11 @@
                         style="flex: 1px"
                 />
                 <button class="btn btn-outline-primary" style="border-radius: 20px">
-                    yagni reja qo'shish
+                    add new plans
                 </button>
             </div>
         </form>
     </div>
-
 
 <ul id="item-list" class="list-group pb-5">
     <% items.map(function (item) { %>
@@ -41,12 +42,13 @@
         <span class="item-text"><%=item.reja%></span>
         <div>
             <button
-                    data-id="<%=item._id%>" class="edit-me btn btn-secondary btn-sm me-1">
-                o'zgartirish
+                    data-id="<%=item._id%>"
+                    class="edit-me btn btn-secondary btn-sm me-1">
+                Edit
             </button>
             <button
                     data-id="<%=item._id%>"
-                    class="delete-me btn btn-danger btn-sm">o'chirish</button>
+                    class="delete-me btn btn-danger btn-sm">Delete</button>
         </div>
     </li>
     <% }) %>
@@ -55,15 +57,12 @@
 
 
     <button id="clean-all" class="btn btn-danger" style="border-radius: 20px">
-        rejalarni o'chrish
+        Delete all
     </button>
 </div>
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="/browser.js"></script>
+<script src="./browser.js"></script>
 
 </body>
 </html>
-
-
-

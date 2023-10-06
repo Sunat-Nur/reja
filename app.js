@@ -1,7 +1,8 @@
 console.log("web serverni boshladik");
 const express = require("express");
 const app = express();
-//
+
+
 // let user;
 // fs.readFile("database/user.json", "utf8",(err, data) => {
 //     if(err) {
@@ -14,6 +15,7 @@ const app = express();
 // MongoDB call
 
  const db = require("./server").db();
+ const mongodb = require("mongodb");
 
 //1: Kirish code
 app.use(express.static("public"));
@@ -37,6 +39,42 @@ app.use(express.urlencoded({extended: true}));
  });
 });
 
+// delete
+app.post("/delete-item", (req, res) => {
+    const id = req.body.id;
+    db.collection('plans').deleteOne(
+        { _id: new mongodb.ObjectId(id) },
+        function (err, data) {
+            res.json({stata: "success"});
+        }
+    );
+});
+
+
+// delete-all
+
+app.post("/delete-all", (req, res) => {
+    if(req.body.delete_all) {
+        db.collection("plans").deleteMany(function () {
+            res.json({state: "deleted all plans"});
+        })
+    }
+})
+
+// Edit
+app.post("/edit-item", (req, res ) => {
+    const data = req.body;
+    console.log(data);
+    db.collection("plans").findOneAndUpdate(
+        { _id: new mongodb.ObjectId(data.id) },
+        { $set: { reja: data.new_input } },
+        function (err, data) {
+            res.json({ state: "success"});
+        }
+    )
+})
+
+// get
  app.get ("/", function (req, res) {
    console.log("user entered /");
      db.collection("plans")
@@ -50,6 +88,7 @@ app.use(express.urlencoded({extended: true}));
        }
     });
 });
+
 
 //
 // app.get('/author', (req, res) => {
