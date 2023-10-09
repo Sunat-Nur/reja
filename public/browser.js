@@ -34,6 +34,7 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
 });
 
 // delet-one
+
 document.addEventListener("click", function (e) {
     console.log(e.target);
     if(e.target.classList.contains("delete-me")) {
@@ -49,10 +50,8 @@ document.addEventListener("click", function (e) {
                 })
         }
     }
-})
 
 // Edit
-document.addEventListener("click", function (e) {
    if (e.target.classList.contains("edit-me")) {
    let userInput = prompt("edit here",
        e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
